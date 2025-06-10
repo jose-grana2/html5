@@ -1,0 +1,43 @@
+<html>
+    <head>
+
+    <!--header-->
+    <script>
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+    </script>
+    <!--footer-->
+    <script>
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+    </head>
+    <body>
+        <header id="header"></header>
+        <main>
+            <section>
+                <article>
+                    <p>Si has llegado aqui parece que tienes bastante interés en saber algo más sobre mí:</p>
+                    <cite>
+                        Hola soy José Granados soy una persona apasionada del mundo de la informática y por eso no paro de formarme en diferentes tecnologías y siempre me encuentro en constante aprendizaje.
+                        Mi experiencia se ha basado siempre en el desarrollo web a través del lenguaje de programación PHP empezando desde codificación pura, pasando por Wordpress hasta a día de hoy ser programador
+                        en Symfony en ABC de Sevilla, pero debido a mi inquietud de no encasillarme en un solo lenguaje estoy intentando dar el salto a otra tecnologí más actual en el mercado.
+                    </cite>
+
+                    <figure>
+                        <img src="assets/foto_carnet.jpg" alt="foto_carnet_JoseG" title="Imagen de José Granados" width="200px" height="300px" >
+                        <figcaption>José Granados Rodríguez</figcaption>
+                    </figure>
+    
+                </article>
+            </section>
+        </main>
+        <footer id="footer"></footer>
+    </body>
+</html>

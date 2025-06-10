@@ -1,3 +1,64 @@
 <html>
-    
+    <head>
+
+    <!--header-->
+    <script>
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+    </script>
+    <!--footer-->
+    <script>
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+    </head>
+    <body>
+        
+        <header id="header"></header>
+        <main>
+            <!--Imagen-->
+            <figure>
+                <img src="assets/217-500x500.jpg" title="Imagen generada con LoremPicsum" alt="Esta página tiene como objetivo llevar acabo el proyecto final de HTML">
+                <figcaption>Esta página tiene como objetivo llevar acabo el proyecto final de HTML</figcaption>
+            </figure>
+
+            <!--Quienes Somos-->
+            <section>
+                <article>
+                    <h2>Resumen de Quienes somos</h2>
+                    <p>Formo parte de la plantilla de alumnos de Conquer Blocks, soy José Granados pero si quieres saber más de mi necesito que me acomapñes a nuestra página de <a href="quienes-somos.html">QUIENES SOMOS</a></p>
+                </article>
+            </section>
+
+            <!--Listado de cursos-->
+            <section>
+                <article>
+                    <h2>Listado de últimos cursos</h2>
+                    <ul>
+                        <li><a href="https://app.conquerblocks.com/courses/master-en-desarrollo-fullstack/lessons/presentacion-del-modulo/" target="_blank">HTML5</a></li>
+                        <li><a href="https://app.conquerblocks.com/courses/master-en-desarrollo-fullstack/lessons/tema-1-introduccion-unidades-de-medida-y-tipos-de-etiquetas/" target="_blank">CSS</a></li>
+                    </ul>
+                </article>
+            </section>
+
+            <!--Listado de noticias-->
+             <section>
+                <article>
+                    <h2>Listado de últimas noticias</h2>
+                    <ul>
+                        <li><a href="https://www.conquerblocks.com/post/que-es-un-diagrama-de-flujo-y-por-que-es-tan-util" target="_blank">¿Qué es un Diagrama de Flujo y Por Qué es tan Útil?</a></li>
+                        <li><a href="https://www.conquerblocks.com/post/que-es-un-algoritmo-y-por-que-es-tan-importante" target="_blank">¿Qué es un Algoritmo y Por Qué es tan Importante?</a></li>
+                    </ul>
+                </article>
+            </section>
+
+        </main>
+        <footer id="footer"></footer>
+    </body>
 </html>

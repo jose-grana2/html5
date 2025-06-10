@@ -1,0 +1,36 @@
+   <html>
+    <head>
+
+        <!--header-->
+        <script>
+            fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+        </script>
+        <!--footer-->
+        <script>
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+        </script>
+    </head>
+    <body>
+        
+        <header id="header"></header>     
+        <main>
+            <ul>
+                <li><a href="https://app.conquerblocks.com/courses/master-en-desarrollo-fullstack/lessons/tema-1-estructura-general-de-un-ordenador-y-algoritmos/">Bases de la informática</a></li>
+                <li><a href="https://app.conquerblocks.com/courses/master-en-desarrollo-fullstack/lessons/tema-1-clases-teorico-practicas/">Pseudocódigo</a></li>
+                <li><a href="https://app.conquerblocks.com/courses/master-en-desarrollo-fullstack/lessons/tema-1-introduccion-linux-y-la-terminal/">Linux y la terminal</a></li>
+                <li><a href="https://app.conquerblocks.com/courses/master-en-desarrollo-fullstack/lessons/tema-0-instalacion-ide-y-puesta-a-punto/">Python</a></li>
+                <li><a href="https://app.conquerblocks.com/courses/master-en-desarrollo-fullstack/lessons/tema-1-principios-solid-en-python/">Principios SOLID</a></li>
+                <li><a href="https://app.conquerblocks.com/courses/master-en-desarrollo-fullstack/lessons/tema-1-la-importancia-de-git/">GIT y GITHUB</a></li>
+            </ul>
+        </main>
+        <footer id="footer"></footer>
+    </body>
+</html>
