@@ -1,0 +1,165 @@
+   <html>
+    <head>
+        <!--header-->
+        <script>
+            fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+        </script>
+        <!--footer-->
+        <script>
+            fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+        </script>
+    </head>
+    <body>
+        
+        <header id="header"></header>
+        <main>
+            <h1>¿Que es un diagrama de flujo y porqué es tan útil?</h1>
+            <figure>
+                <img
+                    src="/assets/diagramas-flujo.jpg"
+                    title="Imagen principal de diagramas de flujo"
+                    alt="Imagen principal de diagramas de flujo"
+                    width="500px"
+                />
+            </figure>
+            <p>
+            ¿Alguna vez te has preguntado cómo los programadores planifican sus programas
+            antes de escribir una sola línea de código? ¿O cómo se representan los
+            procesos de una manera visual y sencilla? Todo esto se hace con una
+            herramienta muy poderosa llamada *diagrama de flujo*. Pero, ¿qué es realmente?
+            ¿Cómo se usa en programación? Y lo más importante, ¿por qué es tan útil para
+            entender cualquier proceso? En este artículo, te explicaremos de manera clara
+            y sencilla qué es un diagrama de flujo y cómo puede ayudarte en la
+            programación y en la vida cotidiana.
+            </p>
+            <h2><strong>¿Qué es un Diagrama de Flujo?</strong></h2>
+            <p>
+            Un *diagrama de flujo* es una representación visual de un proceso mediante
+            símbolos y flechas que indican el flujo y el orden de ejecución. En pocas
+            palabras, es un mapa que muestra los pasos a seguir para resolver un problema
+            o completar una tarea.
+            </p>
+            <p>
+            Por ejemplo, si queremos hacer un café, el diagrama de flujo de este proceso
+            sería:
+            </p>
+            <p>
+            1. Inicio<br />2. Calentar agua<br />3. Añadir café en el filtro<br />4.
+            Verter el agua caliente<br />5. Servir en una taza<br />6. Fin
+            </p>
+            <p>
+            Cada paso se representa con una figura específica que indica su función, y las
+            flechas muestran el orden en que se deben ejecutar. Esto facilita la
+            comprensión de procesos y algoritmos.
+            </p>
+            <h2>
+            <strong>¿Para Qué Sirve un Diagrama de Flujo en Programación?</strong>
+            </h2>
+            <p>
+            Los diagramas de flujo no solo son útiles para programadores, sino también
+            para cualquier persona que necesite organizar procesos complejos. Sus
+            principales beneficios son:
+            </p>
+            <p>
+            - **Organizar ideas antes de programar:** Permiten visualizar la lógica de un
+            programa antes de escribir código.
+            </p>
+            <p>
+            - **Detectar errores o pasos innecesarios:** Al ser visuales, ayudan a
+            identificar problemas en la lógica antes de implementarla.
+            </p>
+            <p>
+            - **Facilitar la comunicación:** Son una excelente herramienta para explicar
+            cómo funciona un programa sin necesidad de escribir código.
+            </p>
+            <h2><strong>Símbolos Básicos de un Diagrama de Flujo</strong></h2>
+            <p>
+            Para construir un diagrama de flujo, se utilizan diferentes símbolos que
+            representan distintas funciones:
+            </p>
+            <p>- 🟢 **Óvalo:** Representa el *inicio* y el *fin* del proceso.</p>
+            <p>
+            - 🔷 **Rombo:** Se usa para tomar *decisiones* (por ejemplo, "¿tienes leche?
+            Sí / No").
+            </p>
+            <p>
+            - 🟩 **Rectángulo:** Representa una *acción* o proceso (por ejemplo, "sumar
+            dos números").
+            </p>
+            <p>- ➡ **Flecha:** Indica la *dirección* del flujo del proceso.</p>
+            <p>
+            Con estos elementos, podemos representar cualquier algoritmo o proceso de
+            forma clara y ordenada.
+            </p>
+            <h2>
+            <strong>Ejemplo Práctico de un Diagrama de Flujo en Programación</strong>
+            </h2>
+            <p>
+            Imagina que queremos hacer un programa que determine si un número es par o
+            impar. En código Python sería algo así:
+            </p>
+            <p>
+            ```python<br />numero = int(input("Introduce un número: "))<br />resto =
+            numero % 2<br />if resto == 0:<br />&nbsp; &nbsp; print("El número es par")<br />else:<br />&nbsp;
+            &nbsp; print("El número es impar")<br />print("Fin del programa")<br />```
+            </p>
+            <p>Si representamos este proceso en un **diagrama de flujo**, se vería así:</p>
+            <p>
+            1. **Inicio**<br />2. Pedir un número al usuario<br />3. Calcular el resto de
+            la división entre el número y 2<br />4. Evaluar si el resto es 0<br />
+            &nbsp; - Si es 0 → Mostrar "El número es par"<br />
+            &nbsp; - Si no es 0 → Mostrar "El número es impar"<br />5. **Fin**
+            </p>
+            <p>
+            Este diagrama nos ayuda a visualizar la lógica antes de escribir el código,
+            reduciendo errores y facilitando la comprensión del proceso.
+            </p>
+            <h2><strong>Beneficios de Usar Diagramas de Flujo</strong></h2>
+            <p>Aprender a hacer diagramas de flujo tiene muchas ventajas:</p>
+            <p>
+            - **Simplifican problemas complejos:** Nos ayudan a desglosar un problema en
+            pasos pequeños y manejables.
+            </p>
+            <p>
+            - **Mejoran la comprensión del código:** Son una herramienta excelente para
+            aprender y enseñar programación.
+            </p>
+            <p>
+            - **Facilitan la depuración de errores:** Permiten detectar problemas en la
+            lógica antes de que lleguen al código.
+            </p>
+            <p>
+            - **Se usan en muchas áreas:** No solo en programación, sino también en
+            negocios, logística y procesos industriales.
+            </p>
+            <p>
+            Los diagramas de flujo son herramientas esenciales que, una vez que aprendas a
+            utilizarlas, se convertirán en una parte fundamental de tu proceso de
+            planificación.
+            </p>
+            <h2><strong>Conclusión</strong></h2>
+            <p>
+            En resumen, un **diagrama de flujo** es una forma visual de representar un
+            proceso o algoritmo mediante símbolos y flechas. Es una herramienta clave en
+            la programación porque nos ayuda a organizar ideas, detectar errores y mejorar
+            la lógica de nuestro código.
+            </p>
+            <h2><strong>Aprende Más con Conquer Blocks</strong></h2>
+            <p>
+            En **Conquer Blocks** somos apasionados de la tecnología y queremos ayudarte a
+            entenderla mejor. Si te interesa aprender más sobre diagramas de flujo,
+            programación o cualquier otro concepto tecnológico, ¡síguenos y acompáñanos en
+            este viaje de aprendizaje!
+            </p>
+        </main>
+        <footer id="footer"></footer>
+    </body>
+</html>

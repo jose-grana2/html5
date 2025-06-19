@@ -1,0 +1,133 @@
+   <html>
+    <head>
+        <!--header-->
+        <script>
+            fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+        </script>
+        <!--footer-->
+        <script>
+            fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+        </script>
+    </head>
+    <body>
+        
+        <header id="header"></header>
+        <main>
+            <h1>¿Qué es un algoritmo y porqué es tan importante?</h1>
+            <figure>
+            <img
+                src="/assets/algoritmos.jpg"
+                title="Imagen principal de algoritmos"
+                alt="Imagen principal de algoritmos"
+                width="500px"
+            />
+            </figure>
+            <p>
+            ¿Alguna vez te has preguntado cómo Google encuentra respuestas en
+            cuestión de milisegundos o cómo Netflix te recomienda la serie perfecta?
+            Todo esto ocurre gracias a algo llamado *algoritmos*. Pero, ¿qué son
+            realmente? ¿Cómo funcionan? Y, lo más importante, ¿por qué son tan
+            esenciales en la programación y en nuestra vida diaria? En este
+            artículo, desglosaremos este concepto de manera clara y sencilla.
+            </p>
+            <h2><strong>¿Qué es un Algoritmo?</strong></h2>
+            <p>
+            Un *algoritmo* es un conjunto de instrucciones ordenadas y definidas
+            para resolver un problema o realizar una tarea. Es como una receta de
+            cocina: tienes ingredientes (datos de entrada), sigues una serie de
+            pasos (proceso) y obtienes un resultado (salida).
+            </p>
+            <p>
+            Por ejemplo, si quieres hacer un sándwich, podrías seguir estos pasos:
+            </p>
+            <p>
+            1. Tomar dos rebanadas de pan.<br />2. Untar mantequilla en una de
+            ellas.<br />3. Colocar jamón y queso encima.<br />4. Tapar con la otra
+            rebanada de pan.
+            </p>
+            <p>
+            Eso es un algoritmo: una serie de pasos estructurados para obtener un
+            resultado concreto. En la programación, la lógica y el orden de los
+            pasos son fundamentales para obtener la respuesta correcta.
+            </p>
+            <h2><strong>Algoritmos en la Vida Diaria</strong></h2>
+            <p>Aunque no nos demos cuenta, utilizamos algoritmos todo el tiempo:</p>
+            <p>
+            - **Google**: Cuando buscas algo, un algoritmo ordena millones de
+            resultados para mostrarte los más relevantes.
+            </p>
+            <p>
+            - **Netflix**: Un algoritmo analiza tu historial de visualización y te
+            sugiere series o películas que podrían gustarte.
+            </p>
+            <p>
+            - **GPS**: Los sistemas de navegación analizan diferentes caminos y
+            eligen la mejor ruta en función de factores como el tráfico y la
+            distancia.
+            </p>
+            <h2><strong>Algoritmos en la Programación</strong></h2>
+            <p>
+            En el mundo del desarrollo de software, los algoritmos son la base de
+            cualquier programa o aplicación. Por ejemplo, un algoritmo simple para
+            determinar si un número es par o impar en Python sería:
+            </p>
+            <p>
+            ```python<br />numero = int(input("Introduce un número: "))<br />if
+            numero % 2 == 0:<br />&nbsp; &nbsp; print("El número es par")<br />else:<br />&nbsp;
+            &nbsp; print("El número es impar")<br />```
+            </p>
+            <p>
+            Este pequeño fragmento de código toma una entrada (un número), ejecuta
+            un proceso (divide el número entre 2 y verifica el resto) y proporciona
+            una salida (si es par o impar).
+            </p>
+            <h2><strong>Tipos de Algoritmos</strong></h2>
+            <p>
+            Existen muchos tipos de algoritmos, pero algunos de los más comunes son:
+            </p>
+            <p>
+            - **Algoritmos de búsqueda**: Encuentran elementos dentro de una lista
+            (como cuando buscas un contacto en tu teléfono).
+            </p>
+            <p>
+            - **Algoritmos de ordenamiento**: Organizan datos de manera eficiente
+            (como cuando ordenas archivos por fecha o nombre).
+            </p>
+            <p>
+            - **Algoritmos de cifrado**: Protegen información (como cuando WhatsApp
+            encripta tus mensajes para mayor seguridad).
+            </p>
+            <h2><strong>¿Por qué es Importante Aprender Algoritmos?</strong></h2>
+            <p>
+            Comprender los algoritmos no solo es clave para la programación, sino
+            que también ayuda en otros aspectos de la vida:
+            </p>
+            <p>- **Desarrollar pensamiento lógico y estructurado**.</p>
+            <p>- **Resolver problemas de manera eficiente**.</p>
+            <p>- **Entender cómo funciona la tecnología a nuestro alrededor**.</p>
+            <p>- **Mejorar habilidades en programación y automatización**.</p>
+            <h2><strong>Conclusión</strong></h2>
+            <p>
+            En resumen, un algoritmo es un conjunto de pasos lógicos para resolver
+            un problema o realizar una tarea. Están en todas partes, desde los
+            motores de búsqueda hasta las aplicaciones móviles. Si te interesa la
+            programación, aprender a diseñar buenos algoritmos es clave para
+            convertirte en un gran desarrollador.
+            </p>
+            <p>
+            En Conquer Blocks somos apasionados de la tecnología y queremos ayudarte
+            a entenderla mejor. ¡Síguenos y continúa explorando el fascinante mundo
+            de la programación!
+            </p>
+        </main>
+        <footer id="footer"></footer>
+    </body>
+</html>
